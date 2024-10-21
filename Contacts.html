@@ -29,6 +29,33 @@
             padding: 15px 0;
         }
 
+        @media (min-width: 992px) {
+            .navbar {
+                padding: 5px 0;
+
+            }
+
+            .navbar ul li {
+                margin: 0 10px;
+
+            }
+
+            .navbar ul li a {
+                font-size: 0.9rem;
+
+                padding: 5px 10px;
+
+            }
+        }
+
+        @media (min-width: 992px) {
+            .navbar ul li a {
+                font-size: 0.9rem;
+                transition: color 0.3s ease, transform 0.3s ease;
+                /* Smoother transition on hover */
+            }
+        }
+
         .navbar-toggler {
             margin-top: -10px;
             margin-right: 6px;
@@ -56,6 +83,9 @@
             padding: 10px 15px;
         }
 
+
+
+
         .navbar ul li a {
             margin-left: -30px;
             font-size: 1.7rem;
@@ -63,6 +93,14 @@
             text-transform: uppercase;
             color: white;
         }
+
+        @media (min-width: 992px) {
+            .navbar ul li a {
+                font-size: 0.9rem;
+            }
+        }
+
+
 
         .navbar ul li::after {
             content: "";
@@ -341,7 +379,7 @@
     <!-- Main Content -->
     <div class="container" id="container">
         <h1>Contact Me</h1>
-        <p>If you have any questions or just want to say hello, feel free to reach out using the form below!</p>
+        <p>Feel free to reach out with any questions or just to say hi using the form below!</p>
 
         <form class="contact-form">
             <input type="text" name="name" placeholder="Your Name" required>
